@@ -5,13 +5,12 @@ void setup(){
   for(int i=0;i<snow.length;i++){
     snow[i]= new Snowflake();
   }
-  textSize(50);
   size(600,400);
   noStroke();
 }
 void draw(){
   background(#343D66);
-  in();
+  inCatcher();
   me.show();
   me.move();
   for(int i=0;i<snow.length;i++){
@@ -22,7 +21,7 @@ void draw(){
   }
 }
 
-void in(){
+void inCatcher(){
   for(int i=0;i<snow.length;i++){
     if(snow[i].myY+3>=me.myY+15&&snow[i].myY-3<me.myY+20&&snow[i].myX-3>=me.myX-20&&snow[i].myX+3<=me.myX+20){
       snow[i].isMoving=false;
