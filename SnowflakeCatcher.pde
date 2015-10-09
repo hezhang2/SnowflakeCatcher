@@ -20,10 +20,6 @@ void draw(){
     snow[i].wrap();
     snow[i].lookDown();
   }
-  if(me.level==15){
-    fill(200);
-    text("D O N E",20,50);
-    }
 }
 
 void in(){
